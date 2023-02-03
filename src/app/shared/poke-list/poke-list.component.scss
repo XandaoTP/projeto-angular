@@ -1,6 +1,7 @@
 @import '../../../config-scss/rem-calc.scss'; 
 
-:host{
+:host {
+.listagem{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap ;
@@ -52,4 +53,5 @@
             }
         }
     }
+}
 }
