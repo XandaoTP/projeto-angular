@@ -3,6 +3,7 @@
 :host{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap ;
 
     .pokemon{
         position: relative;
@@ -19,6 +20,7 @@
                 font-style: italic;
                 font-weight: 400;
                 margin-bottom: rem-calc(10);
+                text-transform: capitalize;
             }
             ul{
                 display: flex;

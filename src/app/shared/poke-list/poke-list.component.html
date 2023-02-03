@@ -1,28 +1,16 @@
-<a class="pokemon">
-    <section class="pokemon__card">
-        <h2>
-            Bulbasaur
-        </h2>
-        <ul>
-            <li>Grass</li>
-            <li>Poison</li>
-        </ul>
-    </section>
-    <section class="pokemon__image">
-        <img src="../../../assets/image 1.svg" alt="bulbasaur">
-    </section>
-</a>
-<a class="pokemon">
-    <section class="pokemon__card">
-        <h2>
-            Bulbasaur
-        </h2>
-        <ul>
-            <li>Grass</li>
-            <li>Poison</li>
-        </ul>
-    </section>
-    <section class="pokemon__image">
-        <img src="../../../assets/image 1.svg" alt="bulbasaur">
-    </section>
-</a>
+<ng-template ngFor let-pokemon [ngForOf]="getAllPokemons" >
+    <a class="pokemon">
+        <section class="pokemon__card">
+            <h2>
+                {{ pokemon.name }}
+            </h2>
+            <ul>
+                <li>Grass</li>
+                <li>Poison</li>
+            </ul>
+        </section>
+        <section class="pokemon__image">
+            <img src="../../../assets/image 1.svg" alt="bulbasaur">
+        </section>
+    </a>
+</ng-template>
